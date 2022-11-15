@@ -8,7 +8,9 @@ public class Test {
     }
 
     public String factorial(Long number) {
-
+        if(number<0) {
+            return "factorial is only defined for non-negative integers!";
+        }
         else if (number == 0) {
             return "1";
         } else {
